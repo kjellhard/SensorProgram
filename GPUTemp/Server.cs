@@ -12,6 +12,7 @@ class Server
         CoapServer server = new CoapServer();
 
         server.Add(new TempResource("temp"));
+        server.Add(new RTTResource("RTT"));
 
         try
         {
